@@ -4,7 +4,7 @@ use serde::{Deserialize, Serialize};
 
 /// Holds the data which is returned when sending a bulk of transactions.
 ///
-/// Corresponds to [`MultipleTransactionsResponseData`](https://github.com/multiversx/mx-chain-proxy-go/blob/main/data/transaction.go) in mx-chain-proxy-go.
+/// Corresponds to [`MultipleTransactionsResponseData`](https://github.com/multiversx/mx-chain-proxy-go/blob/master/data/transaction.go) in mx-chain-proxy-go.
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct MultipleTransactionsResponseData {
     #[serde(rename = "txsSent")]
@@ -15,7 +15,7 @@ pub struct MultipleTransactionsResponseData {
 
 /// Defines a response from the node holding the number of transactions sent to the chain.
 ///
-/// Corresponds to [`ResponseMultipleTransactions`](https://github.com/multiversx/mx-chain-proxy-go/blob/main/data/transaction.go) in mx-chain-proxy-go.
+/// Corresponds to [`ResponseMultipleTransactions`](https://github.com/multiversx/mx-chain-proxy-go/blob/master/data/transaction.go) in mx-chain-proxy-go.
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct ResponseMultipleTransactions {
     pub error: String,

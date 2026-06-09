@@ -14,7 +14,7 @@ The LLDB pretty-printer script allows you to view managed types such as `BigUint
 
 ### Installation
 
-First, download the [**MultiversX LLDB Pretty-Printer Script**](https://github.com/multiversx/mx-sdk-rs/blob/main/tools/rust-debugger/pretty-printers/multiversx_sc_lldb_pretty_printers.py) to a known directory on your system.
+First, download the [**MultiversX LLDB Pretty-Printer Script**](https://github.com/multiversx/mx-sdk-rs/blob/master/tools/rust-debugger/pretty-printers/multiversx_sc_lldb_pretty_printers.py) to a known directory on your system.
 
 Then, adjust the `lldb.launch.initCommands` entry in your Visual Studio Code settings to import the pretty-printer script:
 

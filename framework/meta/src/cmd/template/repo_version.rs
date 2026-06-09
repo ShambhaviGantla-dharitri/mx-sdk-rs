@@ -9,7 +9,7 @@ impl RepoVersion {
     pub fn url(&self) -> String {
         match self {
             RepoVersion::Main => {
-                "https://github.com/multiversx/mx-sdk-rs/archive/refs/heads/main.zip".to_string()
+                "https://github.com/multiversx/mx-sdk-rs/archive/refs/heads/master.zip".to_string()
             }
             RepoVersion::Tag(tag) => {
                 format!("https://github.com/multiversx/mx-sdk-rs/archive/refs/tags/v{tag}.zip")
@@ -19,7 +19,7 @@ impl RepoVersion {
 
     pub fn temp_dir_name(&self) -> String {
         match self {
-            RepoVersion::Main => "mx-sdk-rs-main".to_string(),
+            RepoVersion::Main => "mx-sdk-rs-master".to_string(),
             RepoVersion::Tag(tag) => {
                 format!("mx-sdk-rs-{tag}")
             }

@@ -2,7 +2,7 @@ use serde::{Deserialize, Serialize};
 
 /// Defines a response from the node holding the transaction status.
 ///
-/// Corresponds to [`ResponseTxStatus`](https://github.com/multiversx/mx-chain-proxy-go/blob/main/data/transaction.go) in mx-chain-proxy-go.
+/// Corresponds to [`ResponseTxStatus`](https://github.com/multiversx/mx-chain-proxy-go/blob/master/data/transaction.go) in mx-chain-proxy-go.
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct ResponseTxStatus {
     pub status: String,
