@@ -1,14 +1,14 @@
 use crate::{version::FrameworkVersion, version_history::LAST_TEMPLATE_VERSION};
 
 pub enum RepoVersion {
-    Master,
+    Main,
     Tag(String),
 }
 
 impl RepoVersion {
     pub fn url(&self) -> String {
         match self {
-            RepoVersion::Master => {
+            RepoVersion::Main => {
                 "https://github.com/multiversx/mx-sdk-rs/archive/refs/heads/main.zip".to_string()
             }
             RepoVersion::Tag(tag) => {
@@ -19,7 +19,7 @@ impl RepoVersion {
 
     pub fn temp_dir_name(&self) -> String {
         match self {
-            RepoVersion::Master => "mx-sdk-rs-main".to_string(),
+            RepoVersion::Main => "mx-sdk-rs-main".to_string(),
             RepoVersion::Tag(tag) => {
                 format!("mx-sdk-rs-{tag}")
             }
@@ -28,7 +28,7 @@ impl RepoVersion {
 
     pub fn get_tag(&self) -> FrameworkVersion {
         match self {
-            RepoVersion::Master => LAST_TEMPLATE_VERSION,
+            RepoVersion::Main => LAST_TEMPLATE_VERSION,
             RepoVersion::Tag(tag) => FrameworkVersion::from_string_template(tag),
         }
     }
