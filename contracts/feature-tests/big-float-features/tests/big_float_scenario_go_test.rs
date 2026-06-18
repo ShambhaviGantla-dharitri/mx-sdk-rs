@@ -5,7 +5,6 @@ fn world() -> ScenarioWorld {
 }
 
 #[test]
-#[ignore]
 fn big_float_ln_go() {
     world().run("scenarios/big_float_ln.scen.json");
 }
