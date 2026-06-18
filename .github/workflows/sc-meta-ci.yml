@@ -3,7 +3,7 @@ name: sc-meta CI
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
 
 permissions:
